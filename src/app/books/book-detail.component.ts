@@ -108,12 +108,25 @@ import { BookApiClient } from './book-api-client.service';
             </div>
 
             <!-- Abstract Section -->
-            <section>
+            <section class="mb-8">
               <h2 class="text-2xl font-bold text-gray-900 mb-4">Description</h2>
               <div class="prose prose-sm max-w-none">
                 <p class="text-gray-700 leading-relaxed whitespace-pre-wrap">{{ book.abstract }}</p>
               </div>
             </section>
+
+            <!-- Action Buttons -->
+            <div class="flex gap-4 pt-6 border-t border-gray-200">
+              <button
+                [routerLink]="['/books', book.isbn, 'edit']"
+                class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                </svg>
+                <span>Edit Book</span>
+              </button>
+            </div>
           </article>
         </div>
       </div>
