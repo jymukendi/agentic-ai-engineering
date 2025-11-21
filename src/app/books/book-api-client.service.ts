@@ -19,4 +19,8 @@ export class BookApiClient {
 
     return this.http.get<Book[]>(this.apiUrl, { params });
   }
+
+  getSingleBook(isbn: string): Observable<Book> {
+    return this.http.get<Book>(`${this.apiUrl}/${isbn}`);
+  }
 }
