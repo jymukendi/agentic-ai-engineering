@@ -12,6 +12,10 @@
   <br>
 </p>
 
+## 📚 Documentation
+
+- **[Architecture & Tech Stack Summary](ARCHITECTURE.md)** - Comprehensive overview of the application's architecture, dependencies, and design patterns
+
 ## Local Development
 
 | Command       | Description                                      |
